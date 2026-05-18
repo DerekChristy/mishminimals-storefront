@@ -1,6 +1,6 @@
-const checkEnvVariables = require("./check-env-variables")
+// const checkEnvVariables = require("./check-env-variables")
 
-checkEnvVariables()
+// checkEnvVariables()
 
 /**
  * Medusa Cloud-related environment variables
