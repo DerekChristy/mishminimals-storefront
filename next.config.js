@@ -20,6 +20,7 @@ const nextConfig = {
       '@lib': path.resolve(__dirname, './src/lib'),
       '@modules': path.resolve(__dirname, './src/modules'),
     }
+    return config;
   },
   logging: {
     fetches: {
