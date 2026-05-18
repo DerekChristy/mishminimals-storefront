@@ -13,6 +13,15 @@ const S3_PATHNAME = process.env.MEDUSA_CLOUD_S3_PATHNAME
  */
 const nextConfig = {
   reactStrictMode: true,
+
+  // 1. Extend static page generation limits to allow slower backend responses
+  staticPageGenerationTimeout: 180, // Extended from default 60s to 180s
+
+  experimental: {
+    // 2. Restrict the maximum number of concurrent workers generating static pages
+    staticGenerationMaxConcurrency: 2, // Throttles parallel fetch sweeps
+  },
+
   webpack: (config) => {
     config.resolve.alias = {
       ...config.resolve.alias,
