@@ -1,7 +1,7 @@
 // const checkEnvVariables = require("./check-env-variables")
 
 // checkEnvVariables()
-
+const path = require('path');
 /**
  * Medusa Cloud-related environment variables
  */
